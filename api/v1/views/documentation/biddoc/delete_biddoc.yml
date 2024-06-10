@@ -1,0 +1,20 @@
+    Removes an Biddoc of the specified location
+    ---
+    tags:
+      - Biddocs
+    parameters:
+      - name: tender_id
+        in: path
+        type: string
+        required: true
+        description: the unique id of the tender
+      - name: biddoc_id
+        in: path
+        type: string
+        required: true
+        description: the id of the biddoc to remove
+    responses:
+      404:
+        description: place not found / Biddoc not found / Biddoc not found in place
+      200:
+        description: request executed successfully

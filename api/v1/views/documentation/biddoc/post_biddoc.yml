@@ -1,0 +1,19 @@
+    Links an Biddoc object to a place
+    ---
+    tags:
+      - Biddocs
+    parameters:
+      - name: Biddoc_id
+        in: body
+        required: true
+        requires:
+          - name
+        properties:
+          name:
+            type: string
+
+    responses:
+      400:
+        description: Not a JSON
+      201:
+        description: request executed successfully

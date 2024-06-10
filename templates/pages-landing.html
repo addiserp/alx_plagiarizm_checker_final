@@ -1,0 +1,192 @@
+{% extends "sidebar-layout.html" %}
+
+{% block title %}Your Tender Website{% endblock %}
+
+{% block maincontent %}
+ <main>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Your Tender Website</title>
+        <style>
+            body {
+                font-family: 'Arial', sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f8f9fa;
+                color: #343a40;
+                text-align: center;
+            }
+
+            header {
+                padding: 2em;
+                background-color: #343a40;
+                color: #ffffff;
+            }
+
+            section {
+                padding: 2em;
+            }
+
+            footer {
+                padding: 1em;
+                background-color: #343a40;
+                color: #ffffff;
+            }
+
+            img {
+                max-width: 100%;
+                height: auto;
+                border-radius: 8px;
+            }
+
+            .container {
+                max-width: 1200px;
+                margin: auto;
+            }
+
+            .main-heading {
+                font-size: 3em;
+                color: #343a40;
+                margin-bottom: 0.5em;
+            }
+
+            .sub-heading {
+                font-size: 1.5em;
+                color: #495057;
+                margin-bottom: 2em;
+            }
+
+            .hero-image {
+                width: 100%;
+                max-height: 500px;
+                object-fit: cover;
+                border-radius: 8px;
+            }
+
+            .feature-image {
+                width: 100%;
+                max-height: 200vh;
+                object-fit: contain;
+                border-radius: 8px;
+                margin-bottom: 1em;
+            }
+
+
+            .about-section {
+                text-align: left;
+                margin-top: 2em;
+                color: #495057;
+            }
+
+            .about-section p {
+                margin-bottom: 1em;
+            }
+
+            .team-section {
+                display: flex;
+                justify-content: space-around;
+                margin-top: 2em;
+                flex-wrap: wrap;
+            }
+
+            .team-member {
+                flex: 1;
+                margin: 0 1em;
+                text-align: center;
+            }
+
+            .team-member img {
+                width: 100%;
+                max-width: 200px;
+                max-height: 267px;
+                object-fit: cover;
+                border-radius: 8px;
+                margin-bottom: 1em;
+            }
+
+            .cta-section {
+                background-color: #343a40;
+                color: #ffffff;
+                padding: 3em 0;
+            }
+
+            .cta-button {
+                background-color: #28a745;
+                color: #ffffff;
+                padding: 1em 2em;
+                font-size: 1.2em;
+                text-decoration: none;
+                border-radius: 8px;
+                transition: background-color 0.3s ease-in-out;
+            }
+
+            .cta-button:hover {
+                background-color: #218838;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <div class="container">
+                <h1 class="main-heading">Alx-Plagiarizm Checker</h1>
+            </div>
+        </header>
+
+        <section>
+            <h1>This project proposal is for the development of a Plagiarism
+                Checker website for ALX instructors as Final project assignment For ALX DevOps engineering certification..</h1>
+            <img src="..//static/images/hero.jpg" alt="Plagiarism Management" class="hero-image">
+        </section>
+
+        <div class="container">
+            <h2>This project proposal is for the development of a Plagiarism Checker website for ALX instructors as Final project assignment For ALX DevOps engineering certification.
+                Plagiarism is a serious issue that needs to be controlled and monitored. It refers to the act of blindly copying someone else’s work and presenting it as your unique work. Here in Alx campus Plagiarism is done by students and affects the education quality of the students and thereby reduce the performance of students.
+                .</h2>
+
+            <div class="feature">
+                <img src="..//static/images/landing_page.jpg" alt="Feature 1" class="feature-image">
+            </div>
+
+
+            <section class="about-section">
+            <div class="container">
+                <h2>About Us</h2>
+                <p>Internet has changed the student’s life and also has changed their learning style. It allows the students to get deeper in the approach towards learning and making their task easier. Many methods are employed in detecting plagiarism. Usually plagiarism detection is done using text mining method.
+                    In this plagiarism checker website , After a student code sample uploaded from github link , then the new system further divides into content . This new web application will process the content, search google and github codebase to match the original content.
+                    </p>
+                    <p>
+                        The development of a plagiarism checker for ALX instructors is a commendable initiative that addresses the critical issue of academic integrity. Plagiarism undermines the value of education and the authenticity of student work, so creating a robust system to detect and deter this practice is essential. 
+                        By leveraging text mining techniques, the proposed system can analyze code samples uploaded via GitHub links, comparing them against a vast database of sources from Google and GitHub. This not only ensures the originality of student submissions but also upholds the standards of the ALX DevOps Engineering  certification. Such a tool would be invaluable in maintaining the quality of education and fostering a culture of honesty and excellence among students.
+                        
+                        
+                    </p>
+            </div>
+        </section>
+
+        <section class="team-section">
+
+            <div class="team-member">
+                <img src="..//static/images/admin.png" alt="Mikias Gedlu">
+                <h3>Mikias Gedlu</h3>
+                <p>Connect on <a href="https://www.linkedin.com/in/mikiasgedlu/">LinkedIn</a></p>
+                <p>Connect on <a href="https://www.linkedin.com/in/mikiasgedlu/">GitHub</a></p>
+                <p>Connect on <a href="https://www.linkedin.com/in/mikiasgedlu/">Twitter</a></p>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <h2>Ready to Explore Opportunities?</h2>
+                <p>Join ALX Students Plagiarism Checker
+               </p>
+                <a href="http://196.189.23.236/" class="cta-button">Get Started</a>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 ALX Students Plagiarism Checker AddisERP | Designed by AddisERP</p>
+        </footer>
+ </main><!-- End #main -->
+{% endblock %}
